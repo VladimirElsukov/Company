@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
 # Create your views here.
 def company(request):
@@ -19,3 +20,4 @@ def about(request):
 
 def contacts(request):
     return render(request, "contacts.html", {"greeting": "Контакты"})
+
