@@ -21,3 +21,18 @@ def about(request):
 def contacts(request):
     return render(request, "contacts.html", {"greeting": "Контакты"})
 
+
+def all_branches(request):
+    return render(request, "branches.html", {"greeting": "Информация о всех филиалах IT-Company"})
+
+
+def london(request):
+    return render(
+        request, "london.html", {"greeting": "Вся информация о филиале IT-Company в Лондоне"})
+
+
+def paris(request):
+    return render(
+        request,
+        "paris.html",
+        {"greeting": "Вся информация о филиале IT-Company в Париже"},)
